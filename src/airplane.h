@@ -15,3 +15,8 @@ typedef struct {
 	char aircraft_model[MAX_STR];
 	float distance;
 } AIRPLANE;
+
+int input_flights(AIRPLANE flight[], int max_size);
+void print_flight(const AIRPLANE *a);
+
+#endif
