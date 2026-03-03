@@ -13,8 +13,8 @@ jobs:
       - name: clean with make
         run: make clean
 
-      - name: create obj directory
-        run: mkdir -p obj
+      - name: create obj, bin directory
+        run: mkdir -p obj bin
 
       - name: build with make
         run: make build
