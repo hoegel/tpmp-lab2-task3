@@ -1,0 +1,20 @@
+name: c build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: clean with make
+        run: make clean
+
+      - name: build with make
+        run: make build
+
+      - name: run program
+        run: make run
